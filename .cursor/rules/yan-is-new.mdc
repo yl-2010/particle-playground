@@ -13,6 +13,8 @@ Explain what you did and what to look at on the desk. No jargon without a transl
 
 Hardware as of 2026-09-15:
 
-- Particle Argon on a breadboard
-- Particle Debugger USB into this Mac, gray ribbon from debugger to the Argon's 10-pin header
+- Mac Studio (M3 Ultra). Two USB-A ports on the back. Put the debugger USB-A cable in one and the Argon white kit USB cable in the other. No dongle.
+- Current failed setup: data USB-C dongle from a front USB-C (Thunderbolt 5) port to the debugger. Gray kit ribbon debugger-to-Argon. White kit USB-A cable from a rear USB-A port to the Argon. This computer never saw the debugger or the Argon over USB in that layout. Front TB5 plus a dongle is a bad path for CMSIS-DAP.
+- Particle Argon on a breadboard. RGB LED on the Argon means it has power even if it does not show up as a USB device.
+- Gray ribbon from debugger to the Argon's 10-pin header (pull the plastic plug first).
 - Breadboard LED: one leg in D5, the other in the blue negative column (ground). That is active-high. The pin must go high to light it. Put 220-330 ohm in series if it is not already there.
