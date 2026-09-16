@@ -1,0 +1,19 @@
+---
+description: Always commit and push straight to origin/main. No confirmation, no branches, no PRs.
+alwaysApply: true
+---
+
+# Push straight to main
+
+This repo lands on `origin/main`. Do it yourself. Do not ask.
+
+After any change you made in this repo:
+
+1. Stay on `main`. Create it from the current branch if it does not exist yet.
+2. Commit the change. Do not wait for the user to say "commit" or "push".
+3. `git push origin main`. Use `-u` on the first push. Do not force-push unless the user said to.
+4. Do not open a PR. Do not make a feature branch. Do not push to `develop`.
+
+Skip the usual "want me to commit?" / "should I push?" questions. The answer here is yes, to main.
+
+If a hook rejects the commit, fix it and make a new commit. Do not `--amend` a commit that already reached the remote.
