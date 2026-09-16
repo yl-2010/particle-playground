@@ -16,4 +16,4 @@ Hardware as of 2026-09-15:
 - Mac Studio (M3 Ultra). Two USB-A ports on the back. Debugger USB-A in one, Argon white kit USB in the other. No dongle. Front USB-C plus a dongle does not enumerate the debugger.
 - Debugger: ARM DAPLink CMSIS-DAP (USB vid 0x0d28 pid 0x0204). Gray kit ribbon to the Argon 10-pin header.
 - Particle Argon on a breadboard. It may not show up as a USB device. SWD through the debugger is the path that works.
-- Breadboard LED: one leg in D5, the other in the blue negative column (ground). Active-high, nRF P1.10. Put 220-330 ohm in series if it is not already there.
+- Breadboard LED: one leg in D5, the other in the blue negative column. The blue strip is not ground until a jumper runs from an Argon GND pin into that same blue strip. Long LED leg in the D5 row, short leg in blue. Active-high, nRF P1.10. 220-330 ohm in series if available.
