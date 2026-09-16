@@ -29,7 +29,7 @@ Then program that hex over SWD with OpenOCD. `austin/tools/flash.sh` is Austin's
 
 - Argon: data-capable micro-USB into the Studio (the board is micro-USB, the Mac is USB-C).
 - Debugger: USB to the Studio, ribbon on the Argon SWD header. Pull the plastic plug if it is still in the header.
-- LED: one leg on D5, other on the breadboard + rail, 220–330 Ω in series. Jumper Argon 3V3 to that + rail and GND to −. The overlay treats D5 as active-low. If the blue rail is actually ground, polarity is wrong.
+- LED: one leg on D5, other in the blue negative column (ground). Overlay is active-high for that. Put 220–330 Ω in series if it is not already there.
 
 Onboard proof LED is `led1` (red status, active-low). `led0` does not visibly light.
 

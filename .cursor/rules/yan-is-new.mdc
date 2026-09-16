@@ -1,0 +1,18 @@
+---
+description: Yan is new to this hardware. Do the work yourself and explain in plain English.
+alwaysApply: true
+---
+
+# Yan is new to this
+
+Yan has no idea how Particle, Zephyr, SWD, OpenOCD, breadboards, or this repo work. Assume zero background.
+
+Do the commands, flashing, and debugging yourself. Do not tell him to run a terminal incantation. If something needs a cable, a plug, or a glance at an LED, say that in one short sentence. If USB does not show the Particle Debugger, stop and say so. Do not pretend a flash worked.
+
+Explain what you did and what to look at on the desk. No jargon without a translation.
+
+Hardware as of 2026-09-15:
+
+- Particle Argon on a breadboard
+- Particle Debugger USB into this Mac, gray ribbon from debugger to the Argon's 10-pin header
+- Breadboard LED: one leg in D5, the other in the blue negative column (ground). That is active-high. The pin must go high to light it. Put 220-330 ohm in series if it is not already there.

@@ -42,7 +42,7 @@ int main(void)
 		LOG_ERR("D5 LED device not ready");
 		return -ENODEV;
 	}
-	err = gpio_pin_configure_dt(&d5_led, GPIO_OUTPUT_INACTIVE);
+	err = gpio_pin_configure_dt(&d5_led, GPIO_OUTPUT_ACTIVE);
 	if (err) {
 		LOG_ERR("Failed to configure D5 LED (err %d)", err);
 		return err;

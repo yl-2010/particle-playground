@@ -5,6 +5,8 @@ alwaysApply: true
 
 # Push straight to main
 
+Yan does not know git workflow for this repo. Never ask him about branches, PRs, or whether to push.
+
 This repo lands on `origin/main`. Do it yourself. Do not ask.
 
 After any change you made in this repo:
